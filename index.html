@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quinsha Aisa Prasetyo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(rgba(150, 150, 150, 0.356), rgba(255, 255, 255, 0)), url(Beautifulmanatahan2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh; /* agar memenuhi tinggi layar */
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.6)), url(preti4.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Side Gallery - Animasi Acak dan Hover */
+    .side-gallery img {
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease;
+      transform: rotate(4deg) scale(1);
+    }
+
+    .side-gallery img:nth-child(2) {
+      transform: rotate(-5deg) scale(0.95);
+    }
+
+    .side-gallery img:nth-child(3) {
+      transform: rotate(6deg) scale(1.05);
+    }
+
+    .side-gallery img:nth-child(4) {
+      transform: rotate(-8deg) scale(1);
+    }
+
+    .side-gallery img:nth-child(5) {
+      transform: rotate(3deg) scale(1.1);
+    }
+
+    .side-gallery img:hover {
+      transform: scale(1.2) rotate(0deg);
+      z-index: 2;
+    }
+    
+    .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2)
+}
+
+.kenangan {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.kenangan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #ff8fc7;">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">Quinsha Aisa Prasetyo</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div>
+    <h1 class="display-4">Welcome</h1>
+    <p class="lead">About The Prettiest girl I Ever See</p>
+  </div>
+</section>
+
+<!-- Galeri Murid -->
+<section class="container-fluid my-5">
+  <h2 class="text-center mb-4">Prettiest Girl</h2>
+  <div class="row">
+    <!-- Sisi Kiri -->
+    <div class="col-md-2 d-none d-md-block side-gallery text-center">
+      <img src="preti14.jpg" class="img-fluid" alt="Foto Kenangan">
+      <img src="preti11.jpg" class="img-fluid" alt="Foto Kenangan">
+      <img src="preti13.jpg" class="img-fluid" alt="Foto Kenangan">
+    </div>
+
+    <!-- Konten Tengah -->
+    <div class="col-md-8">
+      <div class="row g-4 justify-content-center">
+        
+
+        <!-- Siswa 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="preti5.jpg" class="card-img-top" alt="Quinsha">
+            <div class="card-body">
+              <h5 class="card-title">Quinsha Aisa Prasetyo</h5>
+              <p class="card-text">Cita-cita: gatau<br>Motto: gatau  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sisi Kanan -->
+    <div class="col-md-2 d-none d-md-block side-gallery text-center">
+      <img src="preti12.jpg" class="img-fluid" alt="Foto Kenangan">
+      <img src="preti10.jpg" class="img-fluid" alt="Foto Kenangan">
+      <img src="preti7.jpg" class="img-fluid" alt="Foto Kenangan">
+    </div>
+  </div>
+</section>
+
+<!-- Kenangan Kegiatan -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Kenangan Kegiatan</h2>
+  <div class="row g-3 justify-content-center">
+    <div class="kenangan col-md-4 justify-content-center"><img src="bersamajir.jpg" class="img-fluid rounded" alt="Kegiatan 1"></div>
+  </div>
+</section>
+
+
+<!-- Video Perpisahan -->
+<section class="container my-5 text-center">
+  <h2 class="mb-4">Video Perpisahan</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video Perpisahan" allowfullscreen></iframe>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <p>&copy; 2025 | Website About The Prettiest Girl I Ever See</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
